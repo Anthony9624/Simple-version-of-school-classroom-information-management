@@ -2,9 +2,9 @@ package myUtils;
 
 public class ComVariable {
 	
-	private String[] deptnames = {"信息与控制工程学院", "化学工程学院", 
-			  "经济与管理学院", "环境与工程学院", "机械与交通学院", 
-			   "基础部", "体育部"};
+	private String[] deptnames = {"计算机与信息技术学院", "生命科学学院", 
+			  "法学院", "化学化工学院", "文学院", 
+			   "地理科学学院", "教育学院"};
 	private String[] teacherTitles = {"助教", "讲师", "副教授", "教授"};
 	private String[] devices = {"多媒体", "普通"};
 	private String[] weekDays = {"星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"};
