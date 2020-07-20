@@ -21,7 +21,7 @@ CREATE TABLE `classroom` (
   PRIMARY KEY (`clno`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `classroom` VALUES ('1-201','',50),('2-205','多媒体教室',200),('3-301','',40),('B-101','多媒体教室',150);
+INSERT INTO `classroom` VALUES ('1-201','',50),('2-205','数据挖掘实验室',200),('3-301','',40),('B-101','数据挖掘实验室',150);
 
 
 CREATE TABLE `borrow` (
@@ -50,7 +50,7 @@ CREATE TABLE `course` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `course` VALUES ('c2','英语',1,'必修','信息与控制工程学院'),('c3','C语言',2,'必修','信息与控制工程学院');
+INSERT INTO `course` VALUES ('c2','英语',1,'必修','计算机与信息技术学院'),('c3','C语言',2,'必修','计算机与信息技术学院');
 
 
 select * from student
@@ -64,7 +64,7 @@ CREATE TABLE `student` (
   PRIMARY KEY (`sno`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `student` VALUES ('s1','xc','信息与控制工程学院','女',''),('s2','sll','体育部','女','');
+INSERT INTO `student` VALUES ('s1','xc','计算机与信息技术学院','女',''),('s2','sll','计算机科学与技术','女','');
 
 CREATE TABLE `teacher` (
   `tno` varchar(20) NOT NULL,
@@ -75,7 +75,7 @@ CREATE TABLE `teacher` (
   PRIMARY KEY (`tno`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `teacher` VALUES ('t1','张三','男','信息与控制工程学院','助教'),('t2','李四','男','信息与控制工程学院','助教');
+INSERT INTO `teacher` VALUES ('t1','张三','男','计算机与信息技术学院','助教'),('t2','李四','男','计算机与信息技术学院','助教');
 
 CREATE TABLE `schedule` (
   `clno` varchar(20) NOT NULL,
