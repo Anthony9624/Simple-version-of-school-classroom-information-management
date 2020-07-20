@@ -11,9 +11,9 @@ Background-image: url(../img/Clear.jpg);
 </STYLE>
 
 <BODY>
-<title>¿Õ½ÌÊÒ²éÑ¯½á¹û</title>
+<title>ç©ºæ•™å®¤æŸ¥è¯¢ç»“æœ</title>
 <CENTER>
-  <H1><FONT COLOR=RED>¿Õ½ÌÊÒ²éÑ¯½á¹û
+  <H1><FONT COLOR=RED>ç©ºæ•™å®¤æŸ¥è¯¢ç»“æœ
 <BR>
   <FONT Size=4 COLOR=black>
   
@@ -25,35 +25,35 @@ Background-image: url(../img/Clear.jpg);
    
   <FORM action="rs_free.jsp" method = post name = form>
     <table border=1 bordercolor = green width = 30%>
-    <td>½ÌÑ§Â¥:
+    <td>æ•™å­¦æ¥¼:
     <Select name = "classroom">
-       <Option value="½ÌÑ§Â¥">½ÌÑ§Â¥</Option>
-       <Option value="ÊµÑéÂ¥">ÊµÑéÂ¥</Option>
-       <Option value="Òİ·òÂ¥">Òİ·òÂ¥</option>
+       <Option value="ç¬¬ä¸€æ•™å­¦æ¥¼">ç¬¬ä¸€æ•™å­¦æ¥¼</Option>
+       <Option value="ç¬¬äºŒæ•™å­¦æ¥¼">ç¬¬äºŒæ•™å­¦æ¥¼</Option>
+       <Option value="æ–‡ç§‘æ¥¼">æ–‡ç§‘æ¥¼</option>
     </Selcet> 
     </td>
     <td>
-    ĞÇÆÚ:
+    æ˜ŸæœŸ:
     <Select name = "weekday">
-       <Option value="ĞÇÆÚÒ»">ĞÇÆÚÒ»</Option>
-       <Option value="ĞÇÆÚ¶ş">ĞÇÆÚ¶ş</Option>
-       <Option value="ĞÇÆÚÈı">ĞÇÆÚÈı</Option>
-       <Option value="ĞÇÆÚËÄ">ĞÇÆÚËÄ</Option>
-       <Option value="ĞÇÆÚÎå">ĞÇÆÚÎå</Option>
-       <Option value="ĞÇÆÚÁù">ĞÇÆÚÁù</Option>
-       <Option value="ĞÇÆÚÈÕ">ĞÇÆÚÈÕ</Option>
+       <Option value="æ˜ŸæœŸä¸€">æ˜ŸæœŸä¸€</Option>
+       <Option value="æ˜ŸæœŸäºŒ">æ˜ŸæœŸäºŒ</Option>
+       <Option value="æ˜ŸæœŸä¸‰">æ˜ŸæœŸä¸‰</Option>
+       <Option value="æ˜ŸæœŸå››">æ˜ŸæœŸå››</Option>
+       <Option value="æ˜ŸæœŸäº”">æ˜ŸæœŸäº”</Option>
+       <Option value="æ˜ŸæœŸå…­">æ˜ŸæœŸå…­</Option>
+       <Option value="æ˜ŸæœŸæ—¥">æ˜ŸæœŸæ—¥</Option>
     </Selcet>
     </td>
-    <td>¿ÕÏĞÊ±¼ä¶Î:
+    <td>ç©ºé—²æ—¶é—´æ®µ:
 		  <select name="period">
-		     <option value="Ò»¶ş½Ú">Ò»¶ş½Ú</option>
-		     <option value="ÈıËÄ½Ú">ÈıËÄ½Ú</option>
-		     <option value="ÎåÁù½Ú">ÎåÁù½Ú</option>
-		     <option value="Æß°Ë½Ú">Æß°Ë½Ú</option>
-		     <option value="¾ÅÊ®½Ú">¾ÅÊ®½Ú</option>
+		     <option value="ä¸€äºŒèŠ‚">ä¸€äºŒèŠ‚</option>
+		     <option value="ä¸‰å››èŠ‚">ä¸‰å››èŠ‚</option>
+		     <option value="äº”å…­èŠ‚">äº”å…­èŠ‚</option>
+		     <option value="ä¸ƒå…«èŠ‚">ä¸ƒå…«èŠ‚</option>
+		     <option value="ä¹åèŠ‚">ä¹åèŠ‚</option>
 		  </select></td>
     <td>
-    <INPUT type="submit" value="²é¿´" name="submit">
+    <INPUT type="submit" value="æŸ¥çœ‹" name="submit">
     </td>
    </table>
   </FORM>
@@ -72,19 +72,19 @@ Background-image: url(../img/Clear.jpg);
      byte b3[] = periodStr.getBytes("ISO-8859-1");
      periodStr = new String(b3);
      
-     if(clStr.equals("½ÌÑ§Â¥")){
+     if(clStr.equals("ç¬¬ä¸€æ•™å­¦æ¥¼")){
         str="select * from Classroom where clno like '2___' or clno like 'XJ___' or clno like 'DJ___' and clno not in" +
         "(select clno from Schedule "+
         "where  period = '"+periodStr+"' and weekday = '"+weekStr+"') ";
      }   
      
-     if(clStr.equals("ÊµÑéÂ¥")){
+     if(clStr.equals("ç¬¬äºŒæ•™å­¦æ¥¼")){
         str="select * from Classroom where clno like 'S___' or clno like 'SJ_' and clno not in" +
         "(select clno from Schedule "+
         "where  period = '"+periodStr+"' and weekday = '"+weekStr+"')";
      }
      
-     if(clStr.equals("Òİ·òÂ¥")){
+     if(clStr.equals("æ–‡ç§‘æ¥¼")){
         str="select * from Classroom where clno like 'YF____' and clno not in" +
         "(select clno from Schedule "+
         "where  period = '"+periodStr+"' and weekday = '"+weekStr+"')";
@@ -96,11 +96,11 @@ Background-image: url(../img/Clear.jpg);
     out.print("<BR>");
 	out.println("<table width = '30%' border = 1 bordercolor = cyan cellspacing='0' cellpadding='0'  class = Tab> ");
 	out.println("<tr>");
-	out.println("<th>½ÌÊÒºÅ</th>");
-	out.println("<th>Éè±¸</th>");
-	out.println("<th>ÈİÄÉÈËÊı</th>");
-	out.println("<th>Ê±¼ä¶Î</th>");
-	out.println("<th>½Ú´Î</th>");
+	out.println("<th>æ•™å®¤å·</th>");
+	out.println("<th>è®¾å¤‡</th>");
+	out.println("<th>å®¹çº³äººæ•°</th>");
+	out.println("<th>æ—¶é—´æ®µ</th>");
+	out.println("<th>èŠ‚æ¬¡</th>");
 	
 	
 	out.println("</tr>");
@@ -116,7 +116,7 @@ Background-image: url(../img/Clear.jpg);
 %>
 <table>
 <td height=70>
-<a href="study.jsp">·µ»Ø</a>
+<a href="study.jsp">è¿”å›</a>
 </td>
 </table>
   
