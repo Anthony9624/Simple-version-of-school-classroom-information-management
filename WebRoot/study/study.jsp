@@ -11,10 +11,10 @@ Background-image: url(../img/Clear.jpg);
 </STYLE>
 
 <BODY>
-<title>�ս��Ҳ�ѯ</title>
-<a href="../welcome.jsp">����</a>
+<title>空教室查询</title>
+<a href="../welcome.jsp">返回</a>
 <CENTER>
-  <H1><FONT COLOR=RED>�ս��Ҳ�ѯ
+  <H1><FONT COLOR=RED>空教室查询
   <br>
   
 <BR>
@@ -22,35 +22,35 @@ Background-image: url(../img/Clear.jpg);
   <FONT Size=4 COLOR=black>
   <FORM action="rs_free.jsp" method = post name = form>
     <table border=1 bordercolor = green width = 30%>
-    <td>��ѧ¥:
+    <td>教学楼:
     <Select name = "classroom">
-       <Option value="��ѧ¥">��ѧ¥</Option>
-       <Option value="ʵ��¥">ʵ��¥</Option>
-       <Option value="�ݷ�¥">�ݷ�¥</option>
+       <Option value="第一教学楼">第一教学楼</Option>
+       <Option value="第一教学楼楼">第一教学楼</Option>
+       <Option value="文科楼">文科楼</option>
     </Selcet> 
     </td>
     <td>
-    ����:
+    星期:
     <Select name = "weekday">
-       <Option value="����һ">����һ</Option>
-       <Option value="���ڶ�">���ڶ�</Option>
-       <Option value="������">������</Option>
-       <Option value="������">������</Option>
-       <Option value="������">������</Option>
-       <Option value="������">������</Option>
-       <Option value="������">������</Option>
+       <Option value="星期一">星期一</Option>
+       <Option value="星期二">星期二</Option>
+       <Option value="星期三">星期三</Option>
+       <Option value="星期四">星期四</Option>
+       <Option value="星期五">星期五</Option>
+       <Option value="星期六">星期六</Option>
+       <Option value="星期日">星期日</Option>
     </Selcet>
     </td>
-    <td>����ʱ���:
+    <td>空闲时间段:
 		  <select name="period">
-		     <option value="һ����">һ����</option>
-		     <option value="���Ľ�">���Ľ�</option>
-		     <option value="������">������</option>
-		     <option value="�߰˽�">�߰˽�</option>
-		     <option value="��ʮ��">��ʮ��</option>
+		     <option value="一二节">一二节</option>
+		     <option value="三四节">三四节</option>
+		     <option value="五六节">五六节</option>
+		     <option value="七八节">七八节</option>
+		     <option value="九十节">九十节</option>
 		  </select></td>
     <td>
-    <INPUT type="submit" value="�鿴" name="submit">
+    <INPUT type="submit" value="查看" name="submit">
     </td>
    </table>
   </FORM>
