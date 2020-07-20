@@ -25,7 +25,7 @@ Background-image: url(../img/Clear.jpg);
     <td>教学楼:
     <Select name = "classroom">
        <Option value="第一教学楼">第一教学楼</Option>
-       <Option value="第一教学楼楼">第一教学楼</Option>
+       <Option value="第二教学楼">第二教学楼</Option>
        <Option value="文科楼">文科楼</option>
     </Selcet> 
     </td>
