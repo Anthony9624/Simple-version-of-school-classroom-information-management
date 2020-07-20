@@ -19,17 +19,17 @@ Background-image: url(../img/Clear.jpg);
    {
 %>
 
-<title>�γ�����ѯ</title>
+<title>课程名查询</title>
 <CENTER>
-  <H1><FONT COLOR=RED>�γ�����ѯ
+  <H1><FONT COLOR=RED>课程名查询
 <BR>
 
   
   <FONT Size=4><FONT COLOR=black>
   <FORM action="rs_Cname.jsp" method = post name = form>
-    <P>�γ���:<INPUT type = "text" name = "courseName" value="" size=10>
+    <P>课程名:<INPUT type = "text" name = "courseName" value="" size=10>
     
-   <BR><BR><INPUT type="submit" value="�ύ��ѯ����" name="submit">
+   <BR><BR><INPUT type="submit" value="提交查询内容" name="submit">
   </FORM>
 
 <% }
@@ -38,24 +38,24 @@ Background-image: url(../img/Clear.jpg);
    {
    
  %>
-   <title>Ŀ¼��ѯ</title>
+   <title>目录查询</title>
 <CENTER>
-  <H1><FONT COLOR=RED>Ŀ¼��ѯ
+  <H1><FONT COLOR=RED>目录查询
 <BR>
 
   <FONT Size=4><FONT COLOR=black>
   <FORM action="rs_Cdir.jsp" method = post name = form>
     <Select name = "department">
-      <Option value="��Ϣ����ƹ���ѧԺ">��Ϣ����ƹ���ѧԺ
-       <Option value="��ѧ����ѧԺ">��ѧ����ѧԺ
-       <Option value="���������ѧԺ">���������ѧԺ
-       <Option value="�����빤��ѧԺ">�����빤��ѧԺ
-       <Option value="��е�뽻ͨѧԺ">��е�뽻ͨѧԺ
-       <Option value="������">������
-       <Option value="������">������
+      <Option value="计算机与信息技术学院">计算机与信息技术学院
+       <Option value="生命科学学院">生命科学学院
+       <Option value="法学院">法学院
+       <Option value="化学与化工学院">化学与化工学院
+       <Option value="文学院">文学院
+       <Option value="地理科学学院">地理科学学院
+       <Option value="教育部">教育部
 
     </Selcet> 
-   <BR><BR><INPUT type="submit" value="�ύ��ѯ����" name="submit">
+   <BR><BR><INPUT type="submit" value="提交查询内容" name="submit">
   </FORM>
 <%  
    }
