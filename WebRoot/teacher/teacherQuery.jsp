@@ -15,7 +15,7 @@ Background-image: url(../img/Clear.jpg);
   {
     if(form.teacherName.value=="")
     { 
-       alert("��������Ϊ��");
+       alert("姓名不能为空");
        form.teacherName.focus();
        return false;  
     }
@@ -32,17 +32,17 @@ Background-image: url(../img/Clear.jpg);
    {
 %>
 
-<title>��ʦ������ѯ</title>
+<title>教师姓名查询</title>
 <CENTER>
-  <H1><FONT COLOR=RED>��ʦ������ѯ
+  <H1><FONT COLOR=RED>教师姓名查询
 <BR>
 
   
   <FONT Size=4><FONT COLOR=black>
   <FORM action="rs_Tname.jsp"  name = "form" onsubmit="checkInput(this);">
-    <P>����:<INPUT type = "text" name = "teacherName" value="" size=10>
+    <P>姓名:<INPUT type = "text" name = "teacherName" value="" size=10>
     
-   <BR><BR><INPUT type="submit" value="�ύ��ѯ����" name="submit">
+   <BR><BR><INPUT type="submit" value="提交查询内容" name="submit">
   </FORM>
 
 <% }
@@ -51,25 +51,25 @@ Background-image: url(../img/Clear.jpg);
    {
    
  %>
-   <title>��ʦ Ŀ¼��ѯ</title>
+   <title>教师 目录查询</title>
 <CENTER>
-  <H1><FONT COLOR=RED>Ŀ¼��ѯ
+  <H1><FONT COLOR=RED>目录查询
 <BR>
 
   <FONT Size=4><FONT COLOR=black>
   <FORM action="rs_Tdir.jsp" method = post name = form>
     <Select name = "department">
-       <Option value="��Ϣ����ƹ���ѧԺ">��Ϣ����ƹ���ѧԺ
-       <Option value="��ѧ����ѧԺ">��ѧ����ѧԺ
-       <Option value="���������ѧԺ">���������ѧԺ
-       <Option value="�����빤��ѧԺ">�����빤��ѧԺ
-       <Option value="��е�뽻ͨѧԺ">��е�뽻ͨѧԺ
-       <Option value="������">������
-       <Option value="������">������
+       <Option value="计算机与信息技术学院">计算机与信息技术学院
+       <Option value="生命科学学院">生命科学学院
+       <Option value="文学院">文学院
+       <Option value="法学院">法学院
+       <Option value="化学化工学院">化学化工学院
+       <Option value="地理科学学院">地理科学学院
+       <Option value="教育学院">教育学院
 
 
     </Selcet>
-    <INPUT type="submit" value="�ύ��ѯ����" name="submit">
+    <INPUT type="submit" value="提交查询内容" name="submit">
   </FORM>
 <%  
    }
